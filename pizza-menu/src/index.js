@@ -72,7 +72,7 @@ function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
 
-      {numPizzas < 0 ? (
+      {numPizzas > 0 ? (
         <ul className="pizzas">
           {pizzaData.map((pizza) => (
             <Pizza pizzaObj={pizza} key={pizza.name} />
@@ -85,7 +85,7 @@ function Menu() {
   );
 }
 function Pizza(props) {
-  console.log(props);
+  if (props.pizzaObj.soldOut) return null;
   return (
     <li className="pizza">
       <img src={props.pizzaObj.photoName} alt={props.pizzaObj.name} />
@@ -100,8 +100,8 @@ function Pizza(props) {
 
 function Footer() {
   const hour = new Date().getHours();
-  const openHour = 10;
-  const closeHour = 22;
+  const openHour = 1;
+  const closeHour = 23;
   const isOpen = hour >= openHour && hour <= closeHour;
 
   return (
