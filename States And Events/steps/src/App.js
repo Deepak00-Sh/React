@@ -7,6 +7,14 @@ const messages = [
 ];
 
 export default function App() {
+  return (
+    <div>
+      <Steps />
+      <Steps />
+    </div>
+  );
+}
+function Steps() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
   // Event handler functions inside the component body
@@ -20,7 +28,7 @@ export default function App() {
     setIsOpen((isOpen) => !isOpen);
   }
   return (
-    <>
+    <div>
       <button className="close" onClick={handleClose}>
         &times;
       </button>
@@ -52,6 +60,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
