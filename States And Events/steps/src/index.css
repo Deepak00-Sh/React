@@ -89,3 +89,10 @@ h3 {
 .close:hover {
   color: #7950f2;
 }
+
+div {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
