@@ -14,24 +14,24 @@ In order to keep the inputs in sync with the application, we do three steps :
 <ul>
 <li> Create a piece of state </li>
 i.e.
-<!-- const [description, setDescription] = useState(""); -->
+const [description, setDescription] = useState("");
 
 <li>Implement the state Value to the form element</li>
 i.e.
-<!-- <input
+//<input
         type="text"
         placeholder="Item...."
         value={description}
-/> -->
+// />
 
 <li> Adding the onChange function on the form element to handle the change event else it will remain the empty as defined in the useState("")</li>
 i.e.
-<!-- <input
+// <INPUT
         type="text"
         placeholder="Item...."
         value={description}
         onChange={(e) => {
           setDescription(e.target.value);
         }}
-      /> -->
+      />
 </ul>
