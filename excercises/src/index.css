@@ -70,3 +70,21 @@ body {
 .open .title {
   color: #087f5b;
 }
+.Tip {
+  padding: 10px;
+}
+.serviceSelect {
+  padding: 5px;
+}
+.serviceDiv {
+  margin-top: 4px;
+}
+.bill {
+  margin-top: 15px;
+}
+.resetDiv {
+  margin-top: 20px;
+}
+.resetDiv button {
+  padding: 4px 14px 5px 14px;
+}
