@@ -21,8 +21,12 @@ export default function TipCalculator() {
       <Service percentage2={percentage2} onSelect={setPercentage2}>
         How did your friend like the service ?
       </Service>
-      <TotalBill billTotal={billTotal} total={total} tip={tip} />
-      <Reset reset={handleReset} />
+      {billTotal > 0 && (
+        <>
+          <TotalBill billTotal={billTotal} total={total} tip={tip} />
+          <Reset reset={handleReset} />
+        </>
+      )}
     </div>
   );
 }
@@ -33,7 +37,7 @@ function Bill({ billTotal, setBillTotal }) {
       <p>
         How much was the bill?{" "}
         <input
-          type="text"
+          type="number"
           value={billTotal}
           onChange={(e) => setBillTotal(Number(e.target.value))}
         />
