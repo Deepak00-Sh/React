@@ -25,23 +25,30 @@ const productList = [
 export default function App() {
   return (
     <div>
+      <Header />
       <ProductList productList={productList} />
     </div>
   );
 }
 
+function Header() {
+  return <div className="header">BUY-ONLINE</div>;
+}
+
 function ProductList({ productList }) {
   return (
-    <div>
-      <ul>
-        {productList.map((product) => (
-          <Product product={product} />
-        ))}
-      </ul>
+    <div className="productList">
+      {productList.map((product) => (
+        <Product product={product} />
+      ))}
     </div>
   );
 }
 
 function Product({ product }) {
-  return <li>{product.name}</li>;
+  return (
+    <div className="product">
+      <span className="productName">{product.name}</span>
+    </div>
+  );
 }
