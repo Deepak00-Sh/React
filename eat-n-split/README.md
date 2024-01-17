@@ -3,4 +3,8 @@
 
 <img width="845" alt="eat-n-split" src="https://github.com/Deepak00-Sh/React/assets/78408996/f76fcecd-d81e-4332-adeb-4485a18b0f91">
 
-<p>Learning React</p>
+<h3>Adding the split bill feature </h3>
+![Alt text](image.png)
+
+<h3>updating the balance to the friend</h3>
+![Alt text](image-1.png)
