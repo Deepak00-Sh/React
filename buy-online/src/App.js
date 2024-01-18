@@ -24,7 +24,7 @@ const productList = [
 
 export default function App() {
   return (
-    <div>
+    <div className="container mx-auto">
       <Header />
       <ProductList productList={productList} />
     </div>
@@ -37,7 +37,7 @@ function Header() {
 
 function ProductList({ productList }) {
   return (
-    <div className="productList">
+    <div className="flex flex-npwrap">
       {productList.map((product) => (
         <Product product={product} />
       ))}
