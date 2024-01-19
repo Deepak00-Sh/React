@@ -23,9 +23,28 @@ function ProductList() {
 
 function Product() {
   return (
-    <div className="w-2/5 md:w-1/5 bg-white">
-      <div>Image</div>
-      <div>content</div>
+    <div className="w-52 md:w-1/5 bg-white rounded-lg overflow-hidden ">
+      <div>
+        <img
+          src="https://rukminim2.flixcart.com/image/832/832/xif0q/sweatshirt/n/f/q/-original-imagu8ykzszeqy6g.jpeg?q=70&crop=false"
+          alt="bag"
+          className="h-52 w-52 md:w-56"
+        />
+      </div>
+      <div className="p-3">
+        <span className=" font-semibold">Wildcraft Men Hoodie</span>
+        <p className="text-sm text-slate-500">
+          Stylish and Comforatable hoddies for men{" "}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Button() {
+  return (
+    <div>
+      <button>Add to cart</button>
     </div>
   );
 }
