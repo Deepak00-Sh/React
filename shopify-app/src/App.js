@@ -93,11 +93,3 @@ function Product({ product }) {
     </div>
   );
 }
-
-function Button() {
-  return (
-    <div>
-      <button>Add to cart</button>
-    </div>
-  );
-}
