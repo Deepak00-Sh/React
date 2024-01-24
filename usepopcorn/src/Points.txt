@@ -1,0 +1,19 @@
+#Splittin UI into Components
+1. Breaking up the large Components into smaller
+2. Large may need too many props
+3. Hard to use
+4. LArge Components hard to understand and complex code.
+
+
+
+##Small Components
+1. We end up with 100s of mini Components
+2. confusinhg codebase
+3. Too abstracted
+
+## So the components must be of medium size
+-- Logical Sepration of content/layout
+-- Reusability
+-- Responsibilities/complexity
+
+** Never declare a new component inside another component
