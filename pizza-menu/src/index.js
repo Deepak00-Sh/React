@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { App } from "./components/App";
+import { Pizza } from "./components/Pizza";
 
 const pizzaData = [
   {
@@ -47,25 +49,7 @@ const pizzaData = [
   },
 ];
 
-function App() {
-  return (
-    <>
-      <Header />
-      <Menu />
-      <Footer />
-    </>
-  );
-}
-
-function Header() {
-  return (
-    <header className="header">
-      <h1>Fast React Pizza Co. </h1>
-    </header>
-  );
-}
-
-function Menu() {
+export function Menu() {
   const pizzas = pizzaData;
   const numPizzas = pizzas.length;
   return (
@@ -91,21 +75,7 @@ function Menu() {
     </main>
   );
 }
-function Pizza({ pizzaObj }) {
-  // if (props.pizzaObj.soldOut) return null;
-  return (
-    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
-      <img src={pizzaObj.photoName} alt={pizzaObj.name} />
-      <div>
-        <h3>{pizzaObj.name}</h3>
-        <p>{pizzaObj.ingredients}</p>
-        <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price} -/</span>
-      </div>
-    </li>
-  );
-}
-
-function Footer() {
+export function Footer() {
   const hour = new Date().getHours();
   const openHour = 1;
   const closeHour = 23;
