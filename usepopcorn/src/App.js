@@ -1,7 +1,6 @@
 import { Main } from "./components/Main";
 import { ListBox } from "./components/Main";
 import { MovieList } from "./components/Main";
-
 import { useState } from "react";
 import { WatchedBox } from "./components/WatchedBox";
 import { NavBar, Logo, Search, NumResults } from "./components/NavBar";
