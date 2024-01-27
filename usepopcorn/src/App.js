@@ -1,6 +1,6 @@
 import { Main } from "./components/Main";
 import { NavBar } from "./components/NavBar";
-
+import { useState } from "react";
 export const tempMovieData = [
   {
     imdbID: "tt1375666",
@@ -52,10 +52,11 @@ export const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 export default function App() {
+  const [movies, setMovies] = useState(tempMovieData);
   return (
     <>
-      <NavBar />
-      <Main />
+      <NavBar movies={movies} />
+      <Main movies={movies} />
     </>
   );
 }
