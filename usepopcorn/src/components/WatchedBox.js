@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { tempWatchedData, average } from "../App";
 
-export function WatchedBox({ movies }) {
+export function WatchedBox() {
   const [watched, setWatched] = useState(tempWatchedData);
   const [isOpen2, setIsOpen2] = useState(true);
 
