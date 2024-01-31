@@ -318,6 +318,7 @@ body {
 
 .btn-back {
   position: absolute;
+  font-family: sans-serif;
   top: 0.6rem;
   left: 0.6rem;
   height: 3.2rem;
