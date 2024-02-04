@@ -316,7 +316,7 @@ body {
   margin-top: 2.4rem;
 }
 
-/* .btn-back {
+.btn-back {
   position: absolute;
   font-family: sans-serif;
   top: 0.6rem;
@@ -325,7 +325,7 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   border: none;
-  /* background-color: var(--color-text); */
+  background-color: var(--color-text);
   background-color: #fff;
   color: var(--color-background-500);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
@@ -337,4 +337,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
