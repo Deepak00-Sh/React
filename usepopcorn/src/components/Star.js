@@ -1,4 +1,4 @@
-import { starStyle } from "./StarRating";
+import { starStyle } from "./starStyle";
 
 export function Star({ onRate, full, onHoverIn, onHoverOut }) {
   return (

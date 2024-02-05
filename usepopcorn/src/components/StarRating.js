@@ -38,10 +38,3 @@ export default function StarRating({ maxRating = 5 }) {
     </div>
   );
 }
-
-export const starStyle = {
-  width: "48px",
-  height: "48px",
-  display: "block",
-  cursor: PointerEvent,
-};
