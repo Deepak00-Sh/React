@@ -9,8 +9,5 @@ root.render(
     <>
       <App />
     </>
-    <>
-      <StarRating />
-    </>
   </React.StrictMode>
 );
