@@ -15,6 +15,10 @@ const textStyle = {
   lineHeight: "1",
   margin: "0",
 };
+const textStyleForHeader = {
+  lineHeight: "1",
+  margin: "0",
+};
 export default function StarRating({ maxRating = 5 }) {
   const [rating, setRating] = useState(0);
   const [tempRating, setTempRating] = useState(0);
