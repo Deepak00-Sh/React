@@ -4,7 +4,8 @@ import { MovieList } from "./components/Main";
 import { useState } from "react";
 import { WatchedSummary } from "./components/WatchedBox";
 import { WatchedMovieList } from "./components/WatchedBox";
-import { NavBar, Logo, Search, NumResults } from "./components/NavBar";
+import { NavBar, Search, NumResults } from "./components/NavBar";
+import { Logo } from "./components/Logo";
 export const tempMovieData = [
   {
     imdbID: "tt1375666",
