@@ -2,7 +2,7 @@ import { Main } from "./components/Main";
 import { Box } from "./components/Main";
 import { MovieList } from "./components/MovieList";
 import { useState } from "react";
-import { WatchedSummary } from "./components/WatchedBox";
+import { WatchedSummary } from "./components/WatchedSummary";
 import { WatchedMovieList } from "./components/WatchedBox";
 import { NavBar, Search } from "./components/NavBar";
 import { NumResults } from "./components/NumResults";
