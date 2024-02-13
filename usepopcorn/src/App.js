@@ -4,7 +4,8 @@ import { MovieList } from "./components/Main";
 import { useState } from "react";
 import { WatchedSummary } from "./components/WatchedBox";
 import { WatchedMovieList } from "./components/WatchedBox";
-import { NavBar, Search, NumResults } from "./components/NavBar";
+import { NavBar, Search } from "./components/NavBar";
+import { NumResults } from "./components/NumResults";
 import { Logo } from "./components/Logo";
 export const tempMovieData = [
   {
