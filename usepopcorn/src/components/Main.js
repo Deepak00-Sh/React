@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Movie } from "./Movie";
 
 export function Main({ children }) {
   return <main className="main">{children}</main>;
@@ -21,19 +22,5 @@ export function MovieList({ movies }) {
         <Movie movie={movie} key={movie.imdbID} />
       ))}
     </ul>
-  );
-}
-function Movie({ movie }) {
-  return (
-    <li>
-      <img src={movie.Poster} alt={`${movie.Title} poster`} />
-      <h3>{movie.Title}</h3>
-      <div>
-        <p>
-          <span>🗓</span>
-          <span>{movie.Year}</span>
-        </p>
-      </div>
-    </li>
   );
 }
