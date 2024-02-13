@@ -1,6 +1,6 @@
 import { Main } from "./components/Main";
 import { Box } from "./components/Main";
-import { MovieList } from "./components/Main";
+import { MovieList } from "./components/MovieList";
 import { useState } from "react";
 import { WatchedSummary } from "./components/WatchedBox";
 import { WatchedMovieList } from "./components/WatchedBox";
