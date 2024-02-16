@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { tempWatchedData } from "../App";
+import { WatchedMovie } from "./WatchedMovie";
 import { WatchedSummary } from "./WatchedSummary";
-import { WatchedMovieList } from "./WatchedMovieList";
 
 export function WatchedBox() {
   const [watched, setWatched] = useState(tempWatchedData);
@@ -22,5 +22,14 @@ export function WatchedBox() {
         </>
       )}
     </div>
+  );
+}
+export function WatchedMovieList({ watched }) {
+  return (
+    <ul className="list">
+      {watched.map((movie) => (
+        <WatchedMovie movie={movie} key={movie.imdbID} />
+      ))}
+    </ul>
   );
 }
