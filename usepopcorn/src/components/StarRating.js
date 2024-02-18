@@ -7,10 +7,10 @@ const containerStyle = {
   gap: "16px",
 };
 
-// const starContainerStyle = {
-//   display: "flex",
-//   flexDirection: "row",
-// };
+const starContainerStyle = {
+  display: "flex",
+  flexDirection: "row",
+};
 
 export default function StarRating({ maxRating = 5 }) {
   const [rating, setRating] = useState(0);
@@ -31,7 +31,6 @@ export default function StarRating({ maxRating = 5 }) {
           </span>
         ))}
       </div>
-      <p style={textStyle}>{tempRating || rating || ""}</p>
     </div>
   );
 }
