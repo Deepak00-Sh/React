@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { Star } from "./Star";
 
+const containerStyle = {
+  display: "flex",
+  alignItems: "center",
+  gap: "16px",
+};
+
+const starContainerStyle = {
+  display: "flex",
+  flexDirection: "row",
+};
+
 export default function StarRating({ maxRating = 5 }) {
   const [rating, setRating] = useState(0);
   const [tempRating, setTempRating] = useState(0);
